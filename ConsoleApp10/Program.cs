@@ -9,34 +9,35 @@ namespace ConsoleApp10
         static void Main(string[] args)
         {
             #region
-            int[] arr1 = { 1, 2, 3, 4, 5 };
+           /* int[] arr1 = { 1, 2, 3, 4, 5 };
             WorkWithArr(arr1);
             int[] arr2 = { 6, 7, 8, 9, 10 };
-            WorkWithArr(arr2);
+            WorkWithArr(arr2);*/
             #endregion
             #region
-            int[] arr3 = { 11, 15, 14, 19, 20 };
+           /* int[] arr3 = { 11, 15, 14, 19, 20 };
             int cutEdedlerCemi = SumOfEven(arr3);
-            Console.WriteLine($"cut ededlerin cemi: {cutEdedlerCemi}");
+            Console.WriteLine($"cut ededlerin cemi: {cutEdedlerCemi}");*/
             #endregion
             #region
-            int[] arr4 = { 3, 5, 10, 15, 2 };
+            /*int[] arr4 = { 3, 5, 10, 15, 2 };
             int ortaArifmetik = HesablaOrtaArifmetik(arr4);
-            Console.WriteLine(ortaArifmetik);
+            Console.WriteLine(ortaArifmetik);*/
             #endregion
             #region
-            int[] arr5 = { 11, 15, 14, 19, 20 };
+           /* int[] arr5 = { 11, 15, 14, 19, 20 };
             int[] arr6 = { 3, 5, 10, 15, 2 };
 
-            MaxValueHesabla(arr5, arr6);
+            MaxValueHesabla(arr5, arr6);*/
             #endregion
             #region
-            CutReqemKvadratHesabla(1, 10);
+            /*CutReqemKvadratHesabla(1, 10);*/
             #endregion
-
-            QuizApp("azerbaycanin paytaxti haradir?", "a)Shusha", "b)Baki", "c)Mingecevir" );
-            QuizApp("Azerbaycanin prezidenti kimdir?","a)ILHAM ELIYEV","b)ferhad","c)tural");
-
+            #region
+           /* QuizAppB("azerbaycanin paytaxti haradir?", "a)Shusha", "b)Baki", "c)Mingecevir" );
+            QuizAppA("Azerbaycanin prezidenti kimdir?","a)ILHAM ELIYEV","b)ferhad","c)tural");
+            QuizAppC("GOAT kimdir?","a)messi","b)ronaldo","c)QURBAN QURBANOV");*/
+            #endregion
 
 
 
@@ -131,8 +132,42 @@ namespace ConsoleApp10
             Console.WriteLine($"kvadratlarin cemi:  {sum}");
 
         }
+        public static void QuizAppA(string sual, string cavabA, string cavabB, string cavabC)
+        {
+            Console.WriteLine(sual);
+            Console.WriteLine(cavabA);
+            Console.WriteLine(cavabB);
+            Console.WriteLine(cavabC);
+            cavabA = "a";
+            cavabB = "b";
+            cavabC = "c";
 
-        public static void QuizApp(string sual,string cavabA,string cavabB,string cavabC)
+            string correctAnswer = cavabA;
+
+
+
+            string userAnswer = Console.ReadLine();
+
+            if (userAnswer == correctAnswer)
+            {
+                Console.WriteLine("duzdu!!!!");
+            }
+
+            else
+            {
+                Console.WriteLine("sehvdir");
+            }
+
+
+        }
+
+
+
+
+
+
+
+        public static void QuizAppB(string sual,string cavabA,string cavabB,string cavabC)
         {
             Console.WriteLine(sual);
             Console.WriteLine(cavabA);
@@ -160,6 +195,37 @@ namespace ConsoleApp10
 
 
         }
+
+        public static void QuizAppC(string sual, string cavabA, string cavabB, string cavabC)
+        {
+            Console.WriteLine(sual);
+            Console.WriteLine(cavabA);
+            Console.WriteLine(cavabB);
+            Console.WriteLine(cavabC);
+            cavabA = "a";
+            cavabB = "b";
+            cavabC = "c";
+
+            string correctAnswer = cavabC;
+
+
+
+            string userAnswer = Console.ReadLine();
+
+            if (userAnswer == correctAnswer)
+            {
+                Console.WriteLine("duzdu!!!!");
+            }
+
+            else
+            {
+                Console.WriteLine("sehvdir");
+            }
+
+
+        }
+
+
 
 
 
